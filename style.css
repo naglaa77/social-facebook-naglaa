@@ -6,6 +6,9 @@
 body {
     background-color: rgb(241,241,241);
 }
+a {
+    text-decoration: none;
+}
 nav {
     display: flex;
     align-items: center;
@@ -87,25 +90,23 @@ nav {
     align-self: flex-start;
 }
 .right-sidebar {
-    background-color: rgb(220, 243, 247);
     flex-basis: 25%;
     position: sticky;
     top: 70px;
     align-self: flex-start;
-    height: 100vh;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    color: grey;
 }
 .main-content {
     flex-basis: 47%;
 }
 /*start left-sidebar*/
-.left-sidebar {
-
-}
 .emp-links {
     border-bottom: 1px solid #cec;
 }
 .emp-links a {
-    text-decoration: none;
     display: flex;
     align-items: center;
     margin-bottom: 30px;
@@ -120,7 +121,7 @@ nav {
     color: blue;
 }
 .shortcut-links a {
-    text-decoration: none;
+  
     display: flex;
     text-align: center;
     margin-bottom: 30px;
@@ -138,3 +139,78 @@ nav {
     font-weight: 500;
 }
 /*End left-sidebar*/
+
+/*start right sidebar*/
+.sidebar-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom:18px ;
+}
+.sidebar-title h4 {
+    font-weight: 600;
+    font-size: 16px;
+}
+.sidebar-title a {
+    color: blue;
+    font-size: 12px;
+}
+.event {
+    display: flex;
+    font-size: 14px;
+    margin-bottom: 20px;
+} 
+.left-even {
+    border-radius: 10px;
+    height: 65px;
+    width: 65px;
+    margin-right: 19px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgb(0,0,0.1);
+}
+.left-even h3 {
+    margin-top: 13px;
+}
+.left-even span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: blue ;
+    font-size: 12px;
+    color: white;
+}
+.right-even {
+    font-size: 12px;
+}
+.right-even a {
+    font-size: 12px;
+    color: blue;
+}
+.sidebar-ads {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.online-list {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.online-list .online img {
+    width: 40px;
+    border-radius: 50%;
+}
+.online-list .online {
+    width: 40px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    margin-right: 13px;
+}
+.online-list .online::after {
+    top: unset;
+    bottom: 5px;
+}
+/*End right sidebar*/
